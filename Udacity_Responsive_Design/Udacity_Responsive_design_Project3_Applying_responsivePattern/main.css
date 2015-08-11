@@ -161,6 +161,9 @@ main {
 }
 
 
+
+
+
 /*
  *
  * Top News
@@ -367,3 +370,48 @@ footer a {
   color: #333;
   padding: 1.5em;
 }
+
+
+
+
+/* media Tags  */
+
+.content {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+@media screen and (min-width: 550px) {
+        .hero {
+          order: -4;
+          width: 60%;
+        }
+        .weather {
+          order: -3;
+          width: 40%;
+        }
+      }
+
+@media screen and (min-width: 700px) {
+        .hero {
+          order: -2;
+          width: 60%;
+        }
+        .top-news {
+          order: -1;
+          width: 40%;
+        }
+        .weather {
+          order: 0;
+          width: 40%;
+        }
+
+
+@media screen and (min-width: 900px) {
+        .content {
+          width:  900px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+
