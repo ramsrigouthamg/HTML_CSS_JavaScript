@@ -4,6 +4,8 @@ import webbrowser
 import fresh_tomatoes
 
 class Movie():
+    """ This class provides a way to play trailers"""
+    valid_ratings = ["G","PG","PG-13","R"]
     def __init__(self,movie_title,movie_storyline,poster_image,trailer_youtube):
         self.title = movie_title
         self.storyline=movie_storyline
@@ -35,4 +37,6 @@ baahubali = Movie("Baahubali",
 movies= [toy_story,avatar,baahubali]
 
 fresh_tomatoes.open_movies_page(movies)
-
+print baahubali.valid_ratings
+print baahubali.__doc__
+print baahubali.__module__
